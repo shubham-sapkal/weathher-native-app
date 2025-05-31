@@ -1,11 +1,12 @@
-import { Text, View } from "react-native"
+import { StyleSheet, Text, View } from "react-native"
 
 
 
-export const MainInfoCard = ({ title = "Card Title" }) => {
+export const MainInfoCard = ({ title = "Card Title", lastUpdateAt=new Date().toDateString() }) => {
 
-    return <View className="flex w-full p-10 h-20 border border-red-500">
-        <Text>{title}</Text>
+    return <View className="flex w-full bg-white py-2 px-4 h-20">
+        <Text className="text-2xl" >{title}</Text>
+        <Text className="text-xs" >Last Update at: {lastUpdateAt} </Text>
     </View>
 
 }

@@ -32,6 +32,7 @@ function App(): React.JSX.Element {
 
   return (
     <Provider store={store} >
+  
     <SafeAreaView className='bg-white mt-8 flex h-full w-full' >
           <NavigationContainer>
             <Tab.Navigator 
