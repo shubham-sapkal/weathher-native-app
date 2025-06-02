@@ -21,15 +21,6 @@ function App(): React.JSX.Element {
  
   const Tab = createBottomTabNavigator();
 
-  // return (
-  //   <SafeAreaView className="flex-1 bg-white mt-32">
-  //     <View>
-  //       <Text>hello World</Text>
-  //     </View>
-  //   </SafeAreaView>
-  // )
-
-
   return (
     <Provider store={store} >
   

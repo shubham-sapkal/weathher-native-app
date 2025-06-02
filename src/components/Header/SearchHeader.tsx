@@ -6,11 +6,11 @@ import { setSelectedCity } from '../../redux';
 
 
 const cities = [
-    { label: 'Mumbai', value: '1' },
-  { label: 'Pune', value: '2' },
-  { label: 'Delhi', value: '3' },
-  { label: 'Bangalore', value: '4' },
-  { label: 'Hyderabad', value: '5' },
+  { label: 'Mumbai', value:'Mumbai'  },
+  { label: 'Pune', value: 'Pune' },
+  { label: 'Delhi', value: 'Delhi' },
+  { label: 'Bangalore', value: 'Bangalore' },
+  { label: 'Hyderabad', value: 'Hyderabad' },
 ]
 
 

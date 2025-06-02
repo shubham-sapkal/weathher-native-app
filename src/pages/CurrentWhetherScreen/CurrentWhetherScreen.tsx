@@ -3,17 +3,33 @@ import { useSelector } from "react-redux"
 import { NoCitySelectedPage } from "../../components/atomicComponents"
 import { MainInfoCard, WeatherBasicInfoCard } from "../../components"
 import { weatherInfoCard } from "./const"
+// import { useApiCall } from "src/hooks"
+import { useEffect } from "react"
 
 // import { WeatherBasicInfoCard } from 'src/components/cards'
 
 
 export const CurrentWhetherScreen = () => {
 
-    const selectedCity = useSelector( (state: any) => state?.slice?.selectedCity )
+    const selectedCity = useSelector( (state) => state?.slice?.selectedCity )
 
     if( !selectedCity ) {
         return <NoCitySelectedPage />
     }
+
+    // const { callApi: getCurrentWeatherData } = useApiCall('', {
+    //     method: 'GET',
+    //     data: {
+    //         'key': '',
+    //     },
+    //     onSuccess: (response) => {
+    //         console.log("response: ", response);
+    //     }
+    // })
+
+    // useEffect( () => {
+    //     getCurrentWeatherData({ q: selectedCity?.value });
+    // }, [selectedCity] )
 
     return (
         <View className="w-full p-2">
